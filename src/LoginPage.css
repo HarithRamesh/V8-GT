@@ -1,0 +1,37 @@
+div{
+  position: relative;
+  bottom: 15px;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  line-height:50px;
+  font-size: 50px;
+  padding: 15px 32px;
+}
+input{
+  align-items: center;
+  border-radius: 25px;
+  background-color:transparent;
+  overflow-x: hidden;
+  border-style: solid;
+  border-color:#636362;
+  width: 60%;
+  text-align: center;
+  font-size: large;
+  padding: 17px;
+} 
+#search {
+  align-items: center;
+  padding: 7px 32px;
+  border-style: solid;
+  border-color:#636362;
+  background-color:transparent;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:whitesmoke;
+  font-size:medium
+}
+::placeholder{
+  color:darkgrey;
+}
