@@ -1,4 +1,4 @@
-div{
+.form {
   position: relative;
   bottom: 15px;
   font-weight: lighter;
@@ -6,22 +6,22 @@ div{
   color: white;
   font-style: italic;
   line-height:50px;
-  font-size: 50px;
+    font-size: 50px;
   padding: 15px 32px;
 }
 input{
   align-items: center;
   border-radius: 25px;
-  background-color:transparent;
   overflow-x: hidden;
   border-style: solid;
   border-color:#636362;
-  width: 60%;
+    width: 55%;
   text-align: center;
   font-size: large;
   padding: 17px;
-  color: white;
-} 
+  color: black;
+  }
+  
 #search {
   align-items: center;
   padding: 7px 32px;
@@ -33,6 +33,8 @@ input{
   color:whitesmoke;
   font-size:medium;
 }
+*/
 ::placeholder{
-  color:darkgrey;
+  color: black;
+    font-style: italic;
 }
