@@ -13,6 +13,11 @@ app.get("/", (req, res) => {
         data: "Hi Harith, Welcome to GoTrip",
     });
 });
+app.get("/Bengaluru", (req, res) => {
+    res.send({
+        data: "Welcome to Bengaluru",
+    });
+});
 app.listen(PORT, () => {
     console.log(`Listening at port ${PORT}`);
 });
