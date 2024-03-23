@@ -4,14 +4,19 @@ import { context } from "../Context/UseContextProvider";
 import axios from "axios";
 
 function ResultPage() {
-    const user = useContext(context)
-    const [place, setPlace] = useState<string>("No Place Found")
+    const userInput = useContext(context)
+    const  placeInput = userInput?.user;
+    const [place, setPlace] = useState<string>("")
     useEffect(() => {
-        getPlaceInformation().then(res => setPlace(res as string));
+        getPlaceInformation().then(res => setPlace(res));
     }, [])
     
     const getPlaceInformation = async () =>  {
-        return (await axios.get(`http://localhost:5000/Bengaluru`)).data 
+        try {
+        return (await axios.get(`/${placeInput}`)).data.data
+        } catch(error) {
+           return "Place not Found";
+        }
     } 
     return <h1> {place} </h1>
 }

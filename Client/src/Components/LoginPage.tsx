@@ -23,7 +23,7 @@ function LoginPage() {
     return null;
   }
   const getUserName = async () => {
-    return (await axios.get("http://localhost:5000/")).data;
+    return (await axios.get("/trial")).data;
   }
   return (
     <div className="form">
